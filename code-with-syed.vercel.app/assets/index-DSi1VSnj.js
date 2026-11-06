@@ -10981,85 +10981,83 @@ const Wx = [
         tech: ["React", "CSS", "Responsive UI"]
     }],
     e2 = () => {
-        const [featured, ...others] = yl;
-        const FeaturedIcon = featured.icon;
-        return m.jsxs("div", {
-            className: "featured-projects-layout mx-auto max-w-6xl",
-            children: [
-                m.jsxs("article", {
-                    className: "featured-project-card group relative grid overflow-hidden rounded-[28px] border border-slate-200/80 bg-white/85 shadow-[0_24px_80px_rgba(15,23,42,.09)] backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80 md:grid-cols-[1.12fr_.88fr]",
-                    children: [
-                        m.jsxs("div", {
-                            className: "featured-project-visual relative flex min-h-[260px] items-center justify-center overflow-hidden p-6 md:min-h-[340px] md:p-9",
-                            children: [
-                                m.jsx("div", { className: "featured-project-orb absolute -left-16 -top-20 h-72 w-72 rounded-full bg-gradient-to-br from-blue-500/35 via-cyan-400/20 to-violet-500/25 blur-3xl" }),
-                                m.jsx("div", { className: "featured-project-orb featured-project-orb-secondary absolute -bottom-28 -right-10 h-72 w-72 rounded-full bg-gradient-to-tr from-violet-500/30 to-blue-500/20 blur-3xl" }),
-                                m.jsxs("div", {
-                                    className: "featured-preview-window relative z-10 w-full max-w-[540px] overflow-hidden rounded-2xl border border-white/20 bg-slate-950/90 p-4 shadow-2xl shadow-blue-950/25 md:p-5",
-                                    children: [
-                                        m.jsxs("div", { className: "mb-5 flex items-center justify-between border-b border-white/10 pb-3", children: [
-                                            m.jsxs("div", { className: "flex items-center gap-2", children: [m.jsx("span",{className:"h-2 w-2 rounded-full bg-rose-400"}),m.jsx("span",{className:"h-2 w-2 rounded-full bg-amber-300"}),m.jsx("span",{className:"h-2 w-2 rounded-full bg-emerald-400"})] }),
-                                            m.jsx("span",{className:"text-[9px] font-semibold tracking-[.2em] text-slate-400",children:"FEATURED BUILD"})
-                                        ]}),
-                                        m.jsxs("div", { className: "grid grid-cols-[1fr_auto] items-center gap-4", children: [
-                                            m.jsxs("div", { children: [
-                                                m.jsx("span",{className:"mb-2 block text-[9px] font-bold uppercase tracking-[.22em] text-cyan-300",children:"AI · KNOWLEDGE · WEB"}),
-                                                m.jsx("div",{className:"max-w-[260px] text-xl font-bold leading-tight text-white md:text-3xl",children:featured.title}),
-                                                m.jsx("p",{className:"mt-2 max-w-[280px] text-[10px] leading-5 text-slate-400 md:text-xs",children:"A focused digital experience, designed and built with care."})
-                                            ]}),
-                                            m.jsx("div",{className:"featured-preview-icon flex h-16 w-16 items-center justify-center rounded-2xl border border-white/15 bg-gradient-to-br from-rose-500 to-violet-600 text-white shadow-lg shadow-violet-500/25 md:h-24 md:w-24",children:m.jsx(FeaturedIcon,{size:38})})
-                                        ]}),
-                                        m.jsxs("div",{className:"mt-6 grid grid-cols-3 gap-2",children:[
-                                            m.jsx("div",{className:"h-10 rounded-lg border border-white/10 bg-white/[.06]"}),
-                                            m.jsx("div",{className:"h-10 rounded-lg border border-white/10 bg-gradient-to-br from-blue-500/25 to-cyan-400/10"}),
-                                            m.jsx("div",{className:"h-10 rounded-lg border border-white/10 bg-white/[.06]"})
-                                        ]})
-                                    ]
+        const a = [...yl, ...yl];
+        return m.jsx("div", {
+            className: "premium-marquee overflow-hidden py-4",
+            "aria-label": "Featured projects",
+            children: m.jsx("div", {
+                className: "project-marquee-track flex w-max gap-4 will-change-transform",
+                children: a.map((l, o) => {
+                    const r = l.icon,
+                        c = o % yl.length + 1;
+                    return m.jsxs("article", {
+                        className: "project-card group relative w-[min(76vw,286px)] shrink-0 overflow-hidden rounded-[1.25rem] border border-slate-200/80 bg-white/85 p-[18px] text-left shadow-[0_18px_55px_rgba(15,23,42,.07)] backdrop-blur-xl p-5 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/70 hover:shadow-[0_28px_80px_rgba(37,99,235,.18)] dark:border-slate-800/90 dark:bg-slate-900/75",
+                        children: [m.jsx("div", {
+                            className: `absolute -right-16 -top-16 h-48 w-48 rounded-full bg-gradient-to-br ${l.tone} opacity-10 blur-3xl transition duration-500 group-hover:scale-125 group-hover:opacity-25`
+                        }), m.jsx("div", {
+                            className: "project-card-shine pointer-events-none absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100"
+                        }), m.jsxs("div", {
+                            className: "relative mb-4 flex items-start justify-between",
+                            children: [m.jsxs("div", {
+                                className: "flex items-center gap-3",
+                                children: [m.jsx("div", {
+                                    className: `flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br ${l.tone} text-white shadow-lg shadow-blue-500/10 transition duration-500 group-hover:scale-110 group-hover:rotate-2 group-hover:shadow-cyan-500/20`,
+                                    children: m.jsx(r, {
+                                        size: 20
+                                    })
+                                }), m.jsxs("div", {
+                                    children: [m.jsx("span", {
+                                        className: "block text-[10px] font-black uppercase tracking-[.2em] text-slate-400",
+                                        children: "Project"
+                                    }), m.jsxs("span", {
+                                        className: "text-xs font-bold text-blue-600 dark:text-cyan-400",
+                                        children: ["0", c]
+                                    })]
+                                })]
+                            }), m.jsx("span", {
+                                className: "flex h-9 w-9 items-center justify-center rounded-full border border-slate-200/80 bg-white/70 text-slate-400 transition duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:border-cyan-400/60 group-hover:text-cyan-500 dark:border-slate-700 dark:bg-slate-950/60",
+                                children: m.jsx(Ta, {
+                                    size: 18
                                 })
-                            ]
-                        }),
-                        m.jsxs("div", {
-                            className: "relative flex flex-col justify-center p-6 md:p-9 lg:p-11",
-                            children: [
-                                m.jsx("span",{className:"mb-3 inline-flex w-fit items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-[10px] font-black uppercase tracking-[.18em] text-blue-700 dark:border-cyan-400/20 dark:bg-cyan-400/10 dark:text-cyan-300",children:"01 · Featured project"}),
-                                m.jsx("h3",{className:"text-2xl font-bold tracking-tight text-slate-900 dark:text-white md:text-3xl",children:featured.title}),
-                                m.jsx("p",{className:"mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300",children:featured.desc}),
-                                m.jsx("div",{className:"mt-5 flex flex-wrap gap-2",children:featured.tech.map(t=>m.jsx("span",{className:"rounded-full border border-blue-100 bg-blue-50/80 px-3 py-1.5 text-[10px] font-bold text-blue-700 dark:border-cyan-400/20 dark:bg-cyan-400/5 dark:text-cyan-300",children:t},t))}),
-                                m.jsxs("div",{className:"mt-7 flex flex-wrap gap-3",children:[
-                                    m.jsxs("a",{href:featured.live,target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-bold text-white shadow-lg shadow-blue-600/20 transition duration-300 hover:-translate-y-0.5 hover:bg-blue-700",children:[m.jsx(ex,{size:14}),"View Live Project"]}),
-                                    m.jsxs("a",{href:featured.link,target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold text-slate-700 transition duration-300 hover:-translate-y-0.5 hover:border-cyan-400 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-200",children:[m.jsx(to,{size:14}),"Source Code"]})
-                                ]})
-                            ]
-                        })
-                    ]
-                }),
-                m.jsx("div",{
-                    className:"mt-5 grid gap-4 md:grid-cols-2",
-                    children:others.map((project,index)=>{
-                        const ProjectIcon=project.icon;
-                        const number=String(index+2).padStart(2,"0");
-                        return m.jsxs("article",{
-                            className:"project-card group relative flex min-w-0 flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white/85 p-5 text-left shadow-[0_12px_40px_rgba(15,23,42,.06)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-cyan-400/70 hover:shadow-[0_20px_55px_rgba(37,99,235,.13)] dark:border-slate-800/90 dark:bg-slate-900/75",
-                            children:[
-                                m.jsx("div",{className:`absolute -right-12 -top-12 h-36 w-36 rounded-full bg-gradient-to-br ${project.tone} opacity-10 blur-3xl transition duration-500 group-hover:opacity-25`}),
-                                m.jsxs("div",{className:"relative flex items-start gap-3",children:[
-                                    m.jsx("div",{className:`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${project.tone} text-white shadow-md transition duration-300 group-hover:scale-105`,children:m.jsx(ProjectIcon,{size:20})}),
-                                    m.jsxs("div",{className:"min-w-0 flex-1",children:[
-                                        m.jsx("span",{className:"text-[9px] font-black uppercase tracking-[.2em] text-slate-400",children:`PROJECT ${number}`}),
-                                        m.jsx("h3",{className:"mt-1 text-base font-bold text-slate-900 dark:text-white",children:project.title})
-                                    ]})
-                                ]}),
-                                m.jsx("p",{className:"relative mt-3 text-xs leading-6 text-slate-600 dark:text-slate-400",children:project.desc}),
-                                m.jsx("div",{className:"relative mt-4 flex flex-wrap gap-1.5",children:project.tech.map(t=>m.jsx("span",{className:"rounded-full border border-blue-100 bg-blue-50/80 px-2.5 py-1 text-[9px] font-bold text-blue-700 dark:border-cyan-400/15 dark:bg-cyan-400/5 dark:text-cyan-300",children:t},t))}),
-                                m.jsxs("div",{className:"relative mt-5 flex flex-wrap gap-2",children:[
-                                    m.jsxs("a",{href:project.live,target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-3 py-2 text-[10px] font-bold text-white transition hover:bg-blue-700",children:[m.jsx(ex,{size:12}),"Live Demo"]}),
-                                    m.jsxs("a",{href:project.link,target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center gap-1.5 rounded-lg border border-slate-200 px-3 py-2 text-[10px] font-bold text-slate-700 transition hover:border-cyan-400 dark:border-slate-700 dark:text-slate-200",children:[m.jsx(to,{size:12}),"GitHub"]})
-                                ]})
-                            ]
-                        },project.title)
-                    })
+                            })]
+                        }), m.jsxs("div", {
+                            className: "relative",
+                            children: [m.jsx("h3", {
+                                className: "mb-1.5 text-base font-bold tracking-tight text-slate-900 dark:text-white",
+                                children: l.title
+                            }), m.jsx("p", {
+                                className: "mb-3 min-h-[66px] text-[13px] leading-[1.55] text-slate-600 dark:text-slate-400",
+                                children: l.desc
+                            }), m.jsx("div", {
+                                className: "mb-4 flex flex-wrap gap-1.5",
+                                children: l.tech.map(h => m.jsx("span", {
+                                    className: "rounded-full border border-blue-100 bg-blue-50/90 px-2 py-1 text-[9px] font-bold text-blue-700 transition group-hover:border-cyan-200 dark:border-cyan-400/15 dark:bg-cyan-400/5 dark:text-cyan-300",
+                                    children: h
+                                }, h))
+                            }), m.jsxs("div", {
+                                className: "flex flex-wrap gap-2",
+                                children: [m.jsxs("a", {
+                                    href: l.live,
+                                    target: "_blank",
+                                    rel: "noreferrer",
+                                    className: "inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-3 py-1.5 text-[11px] font-bold text-white transition hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md hover:shadow-blue-500/25",
+                                    children: [m.jsx(ex, {
+                                        size: 13
+                                    }), " Live"]
+                                }), m.jsxs("a", {
+                                    href: l.link,
+                                    target: "_blank",
+                                    rel: "noreferrer",
+                                    className: "inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white/80 px-3 py-1.5 text-[11px] font-bold text-slate-700 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-950/80 dark:text-slate-200 dark:hover:text-cyan-400",
+                                    children: [m.jsx(to, {
+                                        size: 13
+                                    }), " GitHub"]
+                                })]
+                            })]
+                        })]
+                    }, `${l.title}-${o}`)
                 })
-            ]
+            })
         })
     },
     fc = [{
