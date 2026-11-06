@@ -10957,7 +10957,7 @@ const Wx = [
     }),
     yl = [{
         title: "Eman AI Islamic Assistant",
-        desc: "AI-assisted Islamic Q&A web application with a conversational interface and modern web UI.",
+        desc: "A conversational Islamic knowledge assistant designed to make learning resources easier to explore through a focused, accessible web interface. The project brings AI-assisted interaction and a clean user experience together.",
         icon: ly,
         link: "https://github.com/CodeWithSyed7/EmanAi-Islamic-Assistant",
         live: "https://eman-ai-b85da.web.app",
@@ -10965,7 +10965,7 @@ const Wx = [
         tech: ["React", "AI", "Web"]
     }, {
         title: "AstraFlow AI",
-        desc: "AI developer workspace concept focused on practical development workflows and automation.",
+        desc: "A multi-agent AI workspace concept for organizing development tasks and working with specialist assistants. Built around practical workflows, model integrations and a streamlined developer experience.",
         icon: oy,
         link: "https://github.com/CodeWithSyed7/AstraFlow-AI",
         live: "https://astra-flow-ai.vercel.app/",
@@ -10973,7 +10973,7 @@ const Wx = [
         tech: ["React", "AI", "Workflow"]
     }, {
         title: "Dr. Kinza Saleem",
-        desc: "Professional portfolio website built for a real client with a clean responsive presentation.",
+        desc: "A responsive professional portfolio created for a real client, with clear content structure and a polished interface. Designed to present services, information and contact details across desktop and mobile screens.",
         icon: Yx,
         link: "https://github.com/CodeWithSyed7/Dr-Kinza-Saleem",
         live: "https://dr-kinza-portfolio.web.app",
