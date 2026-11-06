@@ -10986,24 +10986,24 @@ const Wx = [
             className: "premium-marquee overflow-hidden py-4",
             "aria-label": "Featured projects",
             children: m.jsx("div", {
-                className: "project-marquee-track flex w-max gap-6 will-change-transform",
+                className: "project-marquee-track flex w-max gap-4 will-change-transform",
                 children: a.map((l, o) => {
                     const r = l.icon,
                         c = o % yl.length + 1;
                     return m.jsxs("article", {
-                        className: "project-card group relative w-[min(78vw,320px)] shrink-0 overflow-hidden rounded-[1.5rem] border border-slate-200/80 bg-white/85 p-6 text-left shadow-[0_18px_55px_rgba(15,23,42,.07)] backdrop-blur-xl p-5 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/70 hover:shadow-[0_28px_80px_rgba(37,99,235,.18)] dark:border-slate-800/90 dark:bg-slate-900/75",
+                        className: "project-card group relative w-[min(76vw,286px)] shrink-0 overflow-hidden rounded-[1.25rem] border border-slate-200/80 bg-white/85 p-[18px] text-left shadow-[0_18px_55px_rgba(15,23,42,.07)] backdrop-blur-xl p-5 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/70 hover:shadow-[0_28px_80px_rgba(37,99,235,.18)] dark:border-slate-800/90 dark:bg-slate-900/75",
                         children: [m.jsx("div", {
                             className: `absolute -right-16 -top-16 h-48 w-48 rounded-full bg-gradient-to-br ${l.tone} opacity-10 blur-3xl transition duration-500 group-hover:scale-125 group-hover:opacity-25`
                         }), m.jsx("div", {
                             className: "project-card-shine pointer-events-none absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100"
                         }), m.jsxs("div", {
-                            className: "relative mb-5 flex items-start justify-between",
+                            className: "relative mb-4 flex items-start justify-between",
                             children: [m.jsxs("div", {
                                 className: "flex items-center gap-3",
                                 children: [m.jsx("div", {
-                                    className: `flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${l.tone} text-white shadow-lg shadow-blue-500/10 transition duration-500 group-hover:scale-110 group-hover:rotate-2 group-hover:shadow-cyan-500/20`,
+                                    className: `flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br ${l.tone} text-white shadow-lg shadow-blue-500/10 transition duration-500 group-hover:scale-110 group-hover:rotate-2 group-hover:shadow-cyan-500/20`,
                                     children: m.jsx(r, {
-                                        size: 24
+                                        size: 20
                                     })
                                 }), m.jsxs("div", {
                                     children: [m.jsx("span", {
@@ -11023,15 +11023,15 @@ const Wx = [
                         }), m.jsxs("div", {
                             className: "relative",
                             children: [m.jsx("h3", {
-                                className: "mb-2 text-lg font-bold tracking-tight text-slate-900 dark:text-white",
+                                className: "mb-1.5 text-base font-bold tracking-tight text-slate-900 dark:text-white",
                                 children: l.title
                             }), m.jsx("p", {
-                                className: "mb-4 min-h-[60px] text-sm leading-6 text-slate-600 dark:text-slate-400",
+                                className: "mb-3 min-h-[66px] text-[13px] leading-[1.55] text-slate-600 dark:text-slate-400",
                                 children: l.desc
                             }), m.jsx("div", {
-                                className: "mb-5 flex flex-wrap gap-1.5",
+                                className: "mb-4 flex flex-wrap gap-1.5",
                                 children: l.tech.map(h => m.jsx("span", {
-                                    className: "rounded-full border border-blue-100 bg-blue-50/90 px-2.5 py-1 text-[10px] font-bold text-blue-700 transition group-hover:border-cyan-200 dark:border-cyan-400/15 dark:bg-cyan-400/5 dark:text-cyan-300",
+                                    className: "rounded-full border border-blue-100 bg-blue-50/90 px-2 py-1 text-[9px] font-bold text-blue-700 transition group-hover:border-cyan-200 dark:border-cyan-400/15 dark:bg-cyan-400/5 dark:text-cyan-300",
                                     children: h
                                 }, h))
                             }), m.jsxs("div", {
@@ -11040,7 +11040,7 @@ const Wx = [
                                     href: l.live,
                                     target: "_blank",
                                     rel: "noreferrer",
-                                    className: "inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-3.5 py-2 text-xs font-bold text-white transition hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md hover:shadow-blue-500/25",
+                                    className: "inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-3 py-1.5 text-[11px] font-bold text-white transition hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md hover:shadow-blue-500/25",
                                     children: [m.jsx(ex, {
                                         size: 13
                                     }), " Live"]
@@ -11048,7 +11048,7 @@ const Wx = [
                                     href: l.link,
                                     target: "_blank",
                                     rel: "noreferrer",
-                                    className: "inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white/80 px-3.5 py-2 text-xs font-bold text-slate-700 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-950/80 dark:text-slate-200 dark:hover:text-cyan-400",
+                                    className: "inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white/80 px-3 py-1.5 text-[11px] font-bold text-slate-700 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-950/80 dark:text-slate-200 dark:hover:text-cyan-400",
                                     children: [m.jsx(to, {
                                         size: 13
                                     }), " GitHub"]
