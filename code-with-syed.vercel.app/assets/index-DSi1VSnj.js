@@ -10991,13 +10991,13 @@ const Wx = [
                     const r = l.icon,
                         c = o % yl.length + 1;
                     return m.jsxs("article", {
-                        className: "project-card group relative w-[min(84vw,370px)] shrink-0 overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white/85 p-6 text-left shadow-[0_18px_55px_rgba(15,23,42,.07)] backdrop-blur-xl transition duration-500 hover:-translate-y-2 hover:border-cyan-400/70 hover:shadow-[0_28px_80px_rgba(37,99,235,.18)] dark:border-slate-800/90 dark:bg-slate-900/75",
+                        className: "project-card group relative w-[min(78vw,320px)] shrink-0 overflow-hidden rounded-[1.5rem] border border-slate-200/80 bg-white/85 p-6 text-left shadow-[0_18px_55px_rgba(15,23,42,.07)] backdrop-blur-xl p-5 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/70 hover:shadow-[0_28px_80px_rgba(37,99,235,.18)] dark:border-slate-800/90 dark:bg-slate-900/75",
                         children: [m.jsx("div", {
                             className: `absolute -right-16 -top-16 h-48 w-48 rounded-full bg-gradient-to-br ${l.tone} opacity-10 blur-3xl transition duration-500 group-hover:scale-125 group-hover:opacity-25`
                         }), m.jsx("div", {
                             className: "project-card-shine pointer-events-none absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100"
                         }), m.jsxs("div", {
-                            className: "relative mb-7 flex items-start justify-between",
+                            className: "relative mb-5 flex items-start justify-between",
                             children: [m.jsxs("div", {
                                 className: "flex items-center gap-3",
                                 children: [m.jsx("div", {
@@ -11023,13 +11023,13 @@ const Wx = [
                         }), m.jsxs("div", {
                             className: "relative",
                             children: [m.jsx("h3", {
-                                className: "mb-2 text-xl font-bold tracking-tight text-slate-900 dark:text-white",
+                                className: "mb-2 text-lg font-bold tracking-tight text-slate-900 dark:text-white",
                                 children: l.title
                             }), m.jsx("p", {
-                                className: "mb-5 min-h-[72px] text-sm leading-6 text-slate-600 dark:text-slate-400",
+                                className: "mb-4 min-h-[60px] text-sm leading-6 text-slate-600 dark:text-slate-400",
                                 children: l.desc
                             }), m.jsx("div", {
-                                className: "mb-6 flex flex-wrap gap-1.5",
+                                className: "mb-5 flex flex-wrap gap-1.5",
                                 children: l.tech.map(h => m.jsx("span", {
                                     className: "rounded-full border border-blue-100 bg-blue-50/90 px-2.5 py-1 text-[10px] font-bold text-blue-700 transition group-hover:border-cyan-200 dark:border-cyan-400/15 dark:bg-cyan-400/5 dark:text-cyan-300",
                                     children: h
@@ -17967,15 +17967,9 @@ const oT = () => {
                             direction: "right",
                             pauseOnHover: !0,
                             children: [{ src: "./Assets/Core Web/HTML5.svg", alt: "HTML5" }, { src: "./Assets/Core Web/CSS3.svg", alt: "CSS3" }, { src: "./Assets/Core Web/JavaScript.svg", alt: "JavaScript" }, { src: "./Assets/Core Web/TypeScript.svg", alt: "TypeScript" }, { src: "./Assets/Frontend Development/React.svg", alt: "React" }, { src: "./Assets/Frontend Development/Tailwind CSS.svg", alt: "Tailwind CSS" }, { src: "./Assets/Frontend Development/Bootstrap.svg", alt: "Bootstrap" }, { src: "./Assets/Development Tools/Visual Studio Code.svg", alt: "Visual Studio Code" }, { src: "./Assets/Development Tools/Git.svg", alt: "Git" }, { src: "./Assets/Development Tools/GitHub.svg", alt: "GitHub" }, { src: "./Assets/AI & Backend Tools/Firebase.svg", alt: "Firebase" }, { src: "./Assets/AI & Backend Tools/OpenAI.svg", alt: "OpenAI" }, { src: "./Assets/AI & Backend Tools/Google Gemini.svg", alt: "Google Gemini" }, { src: "./Assets/Programming/C++.svg", alt: "C++" }] .map(q => m.jsx("div", {
-                                className: "project-rail-item mx-2 flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-slate-200/80 bg-white p-2.5 shadow-sm dark:border-slate-800 dark:bg-slate-900",
+                                className: "project-rail-item group mx-2 flex h-[76px] min-w-[88px] shrink-0 flex-col items-center justify-center gap-1.5 rounded-2xl border border-slate-200/80 bg-white px-3 py-2 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:border-blue-300 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900",
                                 title: q.alt,
-                                children: m.jsx("img", {
-                                    src: q.src,
-                                    alt: q.alt,
-                                    loading: "lazy",
-                                    decoding: "async",
-                                    className: "max-h-full max-w-full rounded-xl object-contain"
-                                })
+                                children: m.jsxs("div", { className: "flex h-full w-full flex-col items-center justify-center gap-1.5", children: [m.jsx("img", { src: q.src, alt: "", loading: "lazy", decoding: "async", className: "h-7 w-7 object-contain transition-transform duration-300 group-hover:-translate-x-1 group-hover:scale-110" }), m.jsx("span", { className: "whitespace-nowrap text-[10px] font-semibold leading-none text-slate-600 transition-colors group-hover:text-blue-700 dark:text-slate-300 dark:group-hover:text-cyan-300", children: q.alt })] })
                             }, q.src))
                         })
                     }), m.jsx(Ct.section, {
