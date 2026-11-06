@@ -17305,7 +17305,7 @@ const aT = {
                         a(), l("contact");
                         break;
                     case "open_github":
-                        window.open("https://github.com/CodeWithSyed786", "_blank", "noopener,noreferrer");
+                        window.open("https://github.com/CodeWithSyed7", "_blank", "noopener,noreferrer");
                         break;
                     case "open_linkedin":
                         window.open("https://www.linkedin.com/in/CodeWithSyed786", "_blank", "noopener,noreferrer");
@@ -18280,7 +18280,7 @@ const oT = () => {
                                                         })]
                                                     })]
                                                 }), m.jsxs("a", {
-                                                    href: "https://github.com/CodeWithSyed786",
+                                                    href: "https://github.com/CodeWithSyed7",
                                                     target: "_blank",
                                                     rel: "noreferrer",
                                                     className: "contact-line",
@@ -18459,7 +18459,7 @@ const oT = () => {
                                             size: 17
                                         })]
                                     }), m.jsxs("a", {
-                                        href: "https://github.com/CodeWithSyed786",
+                                        href: "https://github.com/CodeWithSyed7",
                                         target: "_blank",
                                         rel: "noreferrer",
                                         className: "clean-blue-cta w-52",
@@ -18557,7 +18557,7 @@ const oT = () => {
                                     }), m.jsxs("div", {
                                         className: "mt-6 flex gap-3",
                                         children: [m.jsx("a", {
-                                            href: "https://github.com/CodeWithSyed786",
+                                            href: "https://github.com/CodeWithSyed7",
                                             target: "_blank",
                                             rel: "noreferrer",
                                             "aria-label": "GitHub",
