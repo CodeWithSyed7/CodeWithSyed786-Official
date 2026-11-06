@@ -10959,7 +10959,7 @@ const Wx = [
         title: "Eman AI Islamic Assistant",
         desc: "AI-assisted Islamic Q&A web application with a conversational interface and modern web UI.",
         icon: ly,
-        link: "https://github.com/CodeWithSyed786/EmanAi-Islamic-Assistant",
+        link: "https://github.com/CodeWithSyed7/EmanAi-Islamic-Assistant",
         live: "https://eman-ai-b85da.web.app",
         tone: "from-rose-500 to-pink-600",
         tech: ["React", "AI", "Web"]
@@ -10967,15 +10967,15 @@ const Wx = [
         title: "AstraFlow AI",
         desc: "AI developer workspace concept focused on practical development workflows and automation.",
         icon: oy,
-        link: "https://github.com/CodeWithSyed786/AstraFlow-AI",
-        live: "https://github.com/CodeWithSyed786/AstraFlow-AI",
+        link: "https://github.com/CodeWithSyed7/AstraFlow-AI",
+        live: "https://astra-flow-ai.vercel.app/",
         tone: "from-blue-600 to-cyan-500",
         tech: ["React", "AI", "Workflow"]
     }, {
         title: "Dr. Kinza Saleem",
         desc: "Professional portfolio website built for a real client with a clean responsive presentation.",
         icon: Yx,
-        link: "https://github.com/CodeWithSyed786/Dr-Kinza-Saleem",
+        link: "https://github.com/CodeWithSyed7/Dr-Kinza-Saleem",
         live: "https://dr-kinza-portfolio.web.app",
         tone: "from-violet-600 to-indigo-600",
         tech: ["React", "CSS", "Responsive UI"]
@@ -17966,55 +17966,7 @@ const oT = () => {
                             speed: 12,
                             direction: "right",
                             pauseOnHover: !0,
-                            children: [{
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/02d8ac344042438f03d4d6860475fddd.jpg",
-                                alt: "Technology and social icon 1"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/176e07a5cd42bc0765062d16eea24c48.jpg",
-                                alt: "Technology and social icon 2"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/1b515abfffdfd78f9f2fdb73d2b12226.jpg",
-                                alt: "Technology and social icon 3"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/2176d0b83b7e7317fc8db2f64eab5f46.jpg",
-                                alt: "Technology and social icon 4"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/24e78ee626aa80d6ff51a3b117dc1609.jpg",
-                                alt: "Technology and social icon 5"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/2beb978648a6c369964817db87bebb30.jpg",
-                                alt: "Technology and social icon 6"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/32972237ec8afd353a2b1ce7349d46a4.jpg",
-                                alt: "Technology and social icon 7"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/3b5d653109a9b36198537eb57d1400ca.jpg",
-                                alt: "Technology and social icon 8"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/43ad39a977665ece2f8066f61d8ded45.jpg",
-                                alt: "Technology and social icon 9"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/521843744a6b97eb7083216a3c2e895b.jpg",
-                                alt: "Technology and social icon 10"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/5f2951065f54f6a905274fd4003320ae.jpg",
-                                alt: "Technology and social icon 11"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/63de5479e8eb4676570c49e2579cab01.jpg",
-                                alt: "Technology and social icon 12"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/73ff18e01100e2fb408c1baa7640d519.jpg",
-                                alt: "Technology and social icon 13"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/795ebb5f4a470cd7242136237f61fc53.jpg",
-                                alt: "Technology and social icon 14"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/7a218c4415cdf102ec8e9612f17abfa4.jpg",
-                                alt: "Technology and social icon 15"
-                            }, {
-                                src: "https://raw.githubusercontent.com/CodeWithSyed786/test/main/Icons/ae8d4529dd2751d973ea24d25313ab2f.jpg",
-                                alt: "Technology and social icon 16"
-                            }].map(q => m.jsx("div", {
+                            children: [{ src: "./Assets/Core Web/HTML5.svg", alt: "HTML5" }, { src: "./Assets/Core Web/CSS3.svg", alt: "CSS3" }, { src: "./Assets/Core Web/JavaScript.svg", alt: "JavaScript" }, { src: "./Assets/Core Web/TypeScript.svg", alt: "TypeScript" }, { src: "./Assets/Frontend Development/React.svg", alt: "React" }, { src: "./Assets/Frontend Development/Tailwind CSS.svg", alt: "Tailwind CSS" }, { src: "./Assets/Frontend Development/Bootstrap.svg", alt: "Bootstrap" }, { src: "./Assets/Development Tools/Visual Studio Code.svg", alt: "Visual Studio Code" }, { src: "./Assets/Development Tools/Git.svg", alt: "Git" }, { src: "./Assets/Development Tools/GitHub.svg", alt: "GitHub" }, { src: "./Assets/AI & Backend Tools/Firebase.svg", alt: "Firebase" }, { src: "./Assets/AI & Backend Tools/OpenAI.svg", alt: "OpenAI" }, { src: "./Assets/AI & Backend Tools/Google Gemini.svg", alt: "Google Gemini" }, { src: "./Assets/Programming/C++.svg", alt: "C++" }] .map(q => m.jsx("div", {
                                 className: "project-rail-item mx-2 flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-slate-200/80 bg-white p-2.5 shadow-sm dark:border-slate-800 dark:bg-slate-900",
                                 title: q.alt,
                                 children: m.jsx("img", {
