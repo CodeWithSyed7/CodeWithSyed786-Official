@@ -4419,3 +4419,27 @@ nav>div {
         font-size: 7.2rem
     }
 }
+
+/* Portfolio refinement: compact project cards and lightweight motion */
+.project-marquee-track { gap: 1rem !important; }
+.project-card { width: min(76vw, 286px) !important; min-width: 0; padding: 18px !important; border-radius: 20px !important; }
+.project-card > .absolute.blur-3xl { width: 8rem; height: 8rem; }
+.project-card .project-card-shine { pointer-events: none; }
+.project-card h3 { font-size: 1rem !important; line-height: 1.35 !important; }
+.project-card p { font-size: .8125rem !important; line-height: 1.55 !important; }
+.project-card a { min-height: 34px; }
+@keyframes portfolioSoftReveal {
+  from { opacity: 0; transform: translate3d(0, 10px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+.project-card { animation: portfolioSoftReveal .42s ease-out both; }
+.project-card:nth-child(2) { animation-delay: 45ms; }
+.project-card:nth-child(3) { animation-delay: 90ms; }
+.project-card:nth-child(4) { animation-delay: 135ms; }
+@media (max-width: 480px) {
+  .project-card { width: min(84vw, 270px) !important; padding: 16px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-card { animation: none !important; transition: none !important; }
+  .project-card *, .project-card *::before, .project-card *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
